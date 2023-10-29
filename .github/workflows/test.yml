@@ -12,3 +12,6 @@ jobs:
       - name: Why
         run: |
           MARIADB=islandora/mariadb@sha256:d6405baf7d2c70280c03bf90ec581484be6fb6563a2fc8b1ba9195b04be699e7 docker compose pull --ignore-pull-failures
+      - shell: bash
+        run: |
+          echo $HOME
